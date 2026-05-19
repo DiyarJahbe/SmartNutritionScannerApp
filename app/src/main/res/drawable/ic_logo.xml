@@ -1,0 +1,32 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+    <!-- Soft Background Glow -->
+    <path
+        android:pathData="M256,256m-256,0a256,256 0,1 1,512 0a256,256 0,1 1,-512 0"
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.1"/>
+
+    <!-- Main Apple/Fruit Body -->
+    <path
+        android:pathData="M380,190c-15-40-50-65-90-65c-20,0-34,10-34,10s-14-10-34-10c-40,0-75,25-90,65c-25,70-10,165,60,195c30,12,64,12,64,12s34,0,64-12C390,355,405,260,380,190z"
+        android:fillColor="#FFFFFF"/>
+
+    <!-- Leaf -->
+    <path
+        android:pathData="M256,125c0,0,10-40,45-50c0,0-30,10-45,50z"
+        android:fillColor="#B2DFDB"/>
+
+    <!-- Stylized Barcode Scanning Pattern -->
+    <path
+        android:pathData="M210,220h8v80h-8z M230,220h4v80h-4z M245,220h12v80h-12z M270,220h4v80h-4z M285,220h8v80h-8z M305,220h4v80h-4z"
+        android:fillColor="#00897B"/>
+
+    <!-- Scanning Line Effect -->
+    <path
+        android:pathData="M180,260h152v4h-152z"
+        android:fillColor="#00897B"
+        android:fillAlpha="0.6"/>
+</vector>
