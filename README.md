@@ -1,91 +1,244 @@
-# Smart Nutrition Scanner App
+# 🥗 Smart Nutrition Scanner App
 
-Smart Nutrition Scanner App is a sample Android application that scans product barcodes and shows nutrition information.
+<p align="center">
+  <img src="https://img.shields.io/badge/Platform-Android-green?style=for-the-badge&logo=android"/>
+  <img src="https://img.shields.io/badge/Kotlin-100%25-purple?style=for-the-badge&logo=kotlin"/>
+  <img src="https://img.shields.io/badge/Jetpack%20Compose-Material%203-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Architecture-Clean%20Architecture-orange?style=for-the-badge"/>
+</p>
 
-## Overview
+<p align="center">
+  📱 Smart Android application that scans food product barcodes and displays detailed nutrition information in real-time.
+</p>
 
-The app is built with Kotlin and Jetpack Compose and uses CameraX + ML Kit to read barcodes. It follows Clean Architecture (MVVM), uses Hilt for DI, Retrofit/OkHttp for networking, Room (KSP) for local persistence, and Kotlin Coroutines + StateFlow for state management.
+---
 
-## Key Features
+# ✨ Features
 
-- CameraX + ML Kit barcode scanning
-- Fetch nutrition data via Retrofit + OkHttp
-- Local history with Room (KSP)
-- Hilt dependency injection
-- Jetpack Compose (Material 3) UI
-- Clean Architecture (domain, data, presentation)
+✅ Barcode scanning using CameraX + ML Kit  
+✅ Real-time nutrition information retrieval  
+✅ Modern Material 3 UI with Jetpack Compose  
+✅ Local scan history using Room Database  
+✅ MVVM + Clean Architecture  
+✅ Dependency Injection with Hilt  
+✅ REST API integration using Retrofit & OkHttp  
+✅ Reactive state management with Coroutines + StateFlow
 
-## Tech Stack
+---
+
+# 📸 Screenshots
+
+> Add your screenshots here later
+
+| Home Screen | Scanner | Nutrition Details |
+| ----------- | ------- | ----------------- |
+| 📷          | 📷      | 📷                |
+
+---
+
+# 🛠 Tech Stack
+
+## 🔹 Language
 
 - Kotlin
-- Jetpack Compose (Material 3)
-- Hilt (DI)
-- Retrofit + OkHttp
-- Room (KSP)
-- CameraX + ML Kit Barcode Scanning
-- Coroutines + StateFlow
 
-## Project ID
+## 🔹 UI
 
-- ApplicationId / Namespace: `com.example.smartnutritionscannerapp`
+- Jetpack Compose
+- Material 3
 
-## Quickstart (Developers)
+## 🔹 Architecture
 
-Prerequisites:
+- MVVM (Model-View-ViewModel)
+- Clean Architecture
 
-- Android Studio (recommended) or Gradle
+## 🔹 Dependency Injection
+
+- Hilt
+
+## 🔹 Networking
+
+- Retrofit
+- OkHttp
+
+## 🔹 Database
+
+- Room Database (KSP)
+
+## 🔹 Barcode Scanning
+
+- CameraX
+- Google ML Kit
+
+## 🔹 Asynchronous Programming
+
+- Kotlin Coroutines
+- StateFlow
+
+---
+
+# 📂 Project Structure
+
+```bash
+SmartNutritionScannerApp/
+│
+├── app/
+│   ├── data/
+│   ├── domain/
+│   ├── presentation/
+│   ├── di/
+│   └── ui/
+│
+├── gradle/
+├── build.gradle.kts
+├── settings.gradle.kts
+└── README.md
+```
+
+---
+
+# 🚀 Getting Started
+
+## Prerequisites
+
+Make sure you have:
+
+- Android Studio Hedgehog or newer
 - JDK 17+
-- Android SDK matching `compileSdk` (see `app/build.gradle.kts`)
+- Android SDK installed
+- Gradle installed (optional)
 
-Open in Android Studio:
+---
 
-1. Open the project directory in Android Studio.
-2. Let Gradle sync and download dependencies.
-3. Run on an emulator or device (grant camera permission when prompted).
+# ⚙️ Installation
 
-Command-line build (using Gradle wrapper):
+## 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/DiyarJahbe/SmartNutritionScannerApp.git
+```
+
+## 2️⃣ Open Project
+
+Open the project in Android Studio.
+
+## 3️⃣ Sync Gradle
+
+Let Android Studio download all required dependencies.
+
+## 4️⃣ Run Application
+
+Run the app on:
+
+- Android Emulator
+- Physical Android Device
+
+---
+
+# 🔐 Required Permissions
+
+The app uses:
+
+```xml
+<uses-permission android:name="android.permission.CAMERA"/>
+<uses-permission android:name="android.permission.INTERNET"/>
+```
+
+---
+
+# 🧪 Build APK
+
+## Debug Build
 
 ```bash
 ./gradlew assembleDebug
-# On Windows
+```
+
+Windows:
+
+```bash
 gradlew.bat assembleDebug
 ```
 
-Install on connected device:
+---
+
+# 📦 Install Debug APK
 
 ```bash
 ./gradlew installDebug
 ```
 
-## Permissions
+---
 
-The app requires:
+# 🧠 Architecture Overview
 
-- `android.permission.CAMERA` — for barcode scanning
-- `android.permission.INTERNET` — to fetch nutrition data
+The application follows **Clean Architecture** principles:
 
-These are declared in `app/src/main/AndroidManifest.xml`.
+- **Presentation Layer** → UI & ViewModels
+- **Domain Layer** → Business Logic
+- **Data Layer** → APIs, Database, Repositories
 
-## Project Structure (high level)
+This improves:
 
-- `app/` — Android application module
-  - `src/main/` — app sources, manifests, resources
-- `build.gradle.kts`, `settings.gradle.kts` — Gradle build files
-- `plan.md` — original architecture & requirements notes
-
-This project follows the Clean Architecture recommendations laid out in `plan.md` (domain, data, presentation, DI, common layers).
-
-## How To Contribute
-
-1. Fork the repository.
-2. Create a feature branch: `git checkout -b feat/your-feature`.
-3. Make changes and add tests where appropriate.
-4. Open a pull request describing the change.
-
-## License
-
-Add a license file (e.g., `LICENSE`) to this repository. If you want, I can add an `MIT` license for you.
+- Scalability
+- Maintainability
+- Testability
+- Code organization
 
 ---
 
-If you'd like, I can now initialize git, create a GitHub repo for you and push this project. Tell me whether you want me to create the remote repo or if you already have one.
+# 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a feature branch
+
+```bash
+git checkout -b feature/YourFeature
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Add new feature"
+```
+
+4. Push branch
+
+```bash
+git push origin feature/YourFeature
+```
+
+5. Open Pull Request
+
+---
+
+# 📌 Future Improvements
+
+- AI-based food recommendations
+- Dark mode support
+- Offline nutrition cache
+- User authentication
+- Firebase analytics
+- Multi-language support
+
+---
+
+# 👨‍💻 Developer
+
+**Diyar Jahbe**
+
+- Android Developer
+- Kotlin & Jetpack Compose Enthusiast
+
+GitHub:
+https://github.com/DiyarJahbe
+
+---
+
+# ⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub!
+
+---
